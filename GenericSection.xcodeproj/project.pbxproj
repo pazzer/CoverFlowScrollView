@@ -11,6 +11,13 @@
 		CFDB165B2C3EC0C500B349D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB165A2C3EC0C500B349D1 /* ContentView.swift */; };
 		CFDB165D2C3EC0CA00B349D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDB165C2C3EC0CA00B349D1 /* Assets.xcassets */; };
 		CFDB16602C3EC0CA00B349D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDB165F2C3EC0CA00B349D1 /* Preview Assets.xcassets */; };
+		CFDB16672C3EC0E600B349D1 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB16662C3EC0E600B349D1 /* Word.swift */; };
+		CFDB16692C3EC0F100B349D1 /* Swatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB16682C3EC0F100B349D1 /* Swatch.swift */; };
+		CFDB166B2C3EC13100B349D1 /* SwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB166A2C3EC13100B349D1 /* SwatchView.swift */; };
+		CFDB166D2C3EC21700B349D1 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB166C2C3EC21700B349D1 /* WordView.swift */; };
+		CFDB166F2C3EC2EE00B349D1 /* CoverFlowScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB166E2C3EC2ED00B349D1 /* CoverFlowScrollView.swift */; };
+		CFDB16712C3ED34A00B349D1 /* CoverFlowSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB16702C3ED34A00B349D1 /* CoverFlowSection.swift */; };
+		CFDB16732C3EF4E900B349D1 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB16722C3EF4E900B349D1 /* SFSymbol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		CFDB165A2C3EC0C500B349D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CFDB165C2C3EC0CA00B349D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFDB165F2C3EC0CA00B349D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CFDB16662C3EC0E600B349D1 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		CFDB16682C3EC0F100B349D1 /* Swatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swatch.swift; sourceTree = "<group>"; };
+		CFDB166A2C3EC13100B349D1 /* SwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwatchView.swift; sourceTree = "<group>"; };
+		CFDB166C2C3EC21700B349D1 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		CFDB166E2C3EC2ED00B349D1 /* CoverFlowScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowScrollView.swift; sourceTree = "<group>"; };
+		CFDB16702C3ED34A00B349D1 /* CoverFlowSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowSection.swift; sourceTree = "<group>"; };
+		CFDB16722C3EF4E900B349D1 /* SFSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,11 @@
 			children = (
 				CFDB16582C3EC0C500B349D1 /* GenericSectionApp.swift */,
 				CFDB165A2C3EC0C500B349D1 /* ContentView.swift */,
+				CFDB166E2C3EC2ED00B349D1 /* CoverFlowScrollView.swift */,
+				CFDB16702C3ED34A00B349D1 /* CoverFlowSection.swift */,
+				CFDB166A2C3EC13100B349D1 /* SwatchView.swift */,
+				CFDB166C2C3EC21700B349D1 /* WordView.swift */,
+				CFDB16742C3EF4F500B349D1 /* Model */,
 				CFDB165C2C3EC0CA00B349D1 /* Assets.xcassets */,
 				CFDB165E2C3EC0CA00B349D1 /* Preview Content */,
 			);
@@ -65,6 +84,16 @@
 				CFDB165F2C3EC0CA00B349D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CFDB16742C3EF4F500B349D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFDB16662C3EC0E600B349D1 /* Word.swift */,
+				CFDB16722C3EF4E900B349D1 /* SFSymbol.swift */,
+				CFDB16682C3EC0F100B349D1 /* Swatch.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +167,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFDB165B2C3EC0C500B349D1 /* ContentView.swift in Sources */,
+				CFDB16692C3EC0F100B349D1 /* Swatch.swift in Sources */,
+				CFDB166D2C3EC21700B349D1 /* WordView.swift in Sources */,
+				CFDB166F2C3EC2EE00B349D1 /* CoverFlowScrollView.swift in Sources */,
+				CFDB166B2C3EC13100B349D1 /* SwatchView.swift in Sources */,
+				CFDB16712C3ED34A00B349D1 /* CoverFlowSection.swift in Sources */,
 				CFDB16592C3EC0C500B349D1 /* GenericSectionApp.swift in Sources */,
+				CFDB16672C3EC0E600B349D1 /* Word.swift in Sources */,
+				CFDB16732C3EF4E900B349D1 /* SFSymbol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
