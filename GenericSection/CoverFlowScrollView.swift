@@ -7,18 +7,16 @@
 
 import SwiftUI
 
+
+
+
 struct CoverFlowScrollView<Model: Identifiable, ModelView: View>: View {
     
     
     @Binding var model: [Model]
-    
+    @Binding var selection: Model.ID?
     @ViewBuilder var modelViewBuilder: (Model) -> ModelView
-    
-    init(model: Binding<[Model]>, @ViewBuilder modelViewBuilder: @escaping (Model) -> ModelView) {
-        self._model = model
-        self.modelViewBuilder = modelViewBuilder
-    }
-    
+
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack {
@@ -39,6 +37,7 @@ struct CoverFlowScrollView<Model: Identifiable, ModelView: View>: View {
         .contentMargins(.horizontal, 20)
         .scrollTargetBehavior(.viewAligned)
         .scrollIndicators(.never)
+        .scrollPosition(id: $selection)
         .aspectRatio(16.0/9, contentMode: .fit)
     }
 }
@@ -50,15 +49,15 @@ struct CoverFlowScrollView<Model: Identifiable, ModelView: View>: View {
     
     struct Preview: View {
         
+        @State var selection: Word.ID?
+        
         @State var words: [Word] = [
             Word("turbid", definition: "(of a liquid) cloudy, opaque, or thick with suspended matter."),
             Word("turgid", definition: "(of language, writing, etc.) boring, complicated, and difficult to understand"),
             Word("torpor", definition: "the state of not being active and having no energy or enthusiasm")]
-
-
         
         var body: some View {
-            CoverFlowScrollView(model: $words) { word in
+            CoverFlowScrollView(model: $words, selection: $selection) { word in
                 WordView(word: word)
             }
         }
@@ -75,8 +74,10 @@ struct CoverFlowScrollView<Model: Identifiable, ModelView: View>: View {
         
         @State var model = [1,2,3]
         
+        @State var selection: Int.ID?
+        
         var body: some View {
-            CoverFlowScrollView(model: $model) { int in
+            CoverFlowScrollView(model: $model, selection: $selection) { int in
                 Text("\(int)")
                     .font(.largeTitle.bold())
                     .foregroundStyle(.orange)

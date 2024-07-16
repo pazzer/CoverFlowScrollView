@@ -43,7 +43,7 @@ struct WordBackground: View {
     }
 }
 
-#Preview {
+#Preview("WordView") {
     
     
     struct Preview: View {
@@ -53,7 +53,7 @@ struct WordBackground: View {
         var body: some View {
             WordView(word: word)
                 .padding()
-                .aspectRatio(16.9/9, contentMode: .fit)
+                .aspectRatio(16.0/9, contentMode: .fit)
         }
         
     }

@@ -25,7 +25,7 @@ struct SwatchView: View {
     
 }
 
-#Preview {
+#Preview("SwatchView") {
     
     struct Preview: View {
         
