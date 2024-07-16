@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		CFA38B0E2C46E4E900B18B64 /* Int+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Identifiable.swift"; sourceTree = "<group>"; };
 		CFA38B102C46E59500B18B64 /* ForwardBackwardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardBackwardView.swift; sourceTree = "<group>"; };
+		CFA38B122C46E7AE00B18B64 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		CFDB16552C3EC0C500B349D1 /* CoverFlowScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoverFlowScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDB16582C3EC0C500B349D1 /* CoverFlowScrollViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowScrollViewApp.swift; sourceTree = "<group>"; };
 		CFDB165A2C3EC0C500B349D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +54,7 @@
 		CFDB164C2C3EC0C500B349D1 = {
 			isa = PBXGroup;
 			children = (
-				CFDB16572C3EC0C500B349D1 /* GenericSection */,
+				CFDB16572C3EC0C500B349D1 /* CoverFlowScrollView */,
 				CFDB16562C3EC0C500B349D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,9 +67,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CFDB16572C3EC0C500B349D1 /* GenericSection */ = {
+		CFDB16572C3EC0C500B349D1 /* CoverFlowScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				CFA38B122C46E7AE00B18B64 /* README.txt */,
 				CFDB16582C3EC0C500B349D1 /* CoverFlowScrollViewApp.swift */,
 				CFDB165A2C3EC0C500B349D1 /* ContentView.swift */,
 				CFDB166E2C3EC2ED00B349D1 /* CoverFlowScrollView.swift */,
@@ -80,7 +82,7 @@
 				CFDB165C2C3EC0CA00B349D1 /* Assets.xcassets */,
 				CFDB165E2C3EC0CA00B349D1 /* Preview Content */,
 			);
-			path = GenericSection;
+			path = CoverFlowScrollView;
 			sourceTree = "<group>";
 		};
 		CFDB165E2C3EC0CA00B349D1 /* Preview Content */ = {

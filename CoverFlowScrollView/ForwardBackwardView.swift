@@ -1,6 +1,6 @@
 //
 //  ForwardBackwardView.swift
-//  GenericSection
+//  CoverFlowScrollView
 //
 //  Created by Paul Patterson on 16/07/2024.
 //

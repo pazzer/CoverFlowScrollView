@@ -1,6 +1,6 @@
 //
-//  GenericSectionApp.swift
-//  GenericSection
+//  CoverFlowScrollViewApp.swift
+//  CoverFlowScrollView
 //
 //  Created by Paul Patterson on 10/07/2024.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct GenericSectionApp: App {
+struct CoverFlowScrollViewApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

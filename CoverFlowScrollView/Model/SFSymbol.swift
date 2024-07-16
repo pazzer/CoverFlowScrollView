@@ -1,6 +1,6 @@
 //
 //  SFSymbol.swift
-//  GenericSection
+//  CoverFlowScrollView
 //
 //  Created by Paul Patterson on 10/07/2024.
 //
